@@ -1,2 +1,4 @@
 <app-to-do-input (addTodo)="addNewTodo($event)"></app-to-do-input>
+<div class="isLoading" *ngIf="isLoading$ | async">Loading......</div>
+<div class="isLoading" *ngIf="error$ | async as error">{{error}}</div>
 <app-todoitem *ngFor="let todo of todoList$ | async" [todo]="todo" (changeStatus)="changeComp($event)" (deleteTodo)="deleteTodo($event)"></app-todoitem>
