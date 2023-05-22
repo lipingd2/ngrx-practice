@@ -1,0 +1,2 @@
+<app-to-do-input (addTodo)="addNewTodo($event)"></app-to-do-input>
+<app-todoitem *ngFor="let todo of todoList$ | async" [todo]="todo" (changeStatus)="changeComp($event)" (deleteTodo)="deleteTodo($event)"></app-todoitem>

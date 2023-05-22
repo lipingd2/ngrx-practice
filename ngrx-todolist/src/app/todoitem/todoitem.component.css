@@ -1,0 +1,29 @@
+div {
+    font-size: 1.5rem;
+}
+.container{
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.text{
+    text-align: left;
+    width: 92%;
+}
+.text:hover {
+    background-color: rgb(226, 220, 220);
+    cursor: pointer;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    padding: 10px 12px;
+}
+button:hover {
+    background-color: rgb(231, 101, 101);
+    cursor: pointer;
+}
